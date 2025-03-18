@@ -1,0 +1,12 @@
+{
+  "name": "internship_assignment",
+  "version": "1.0.0",
+  "description": "Backend for School Management System",
+  "scripts": {
+    "build": "cd School_Management_API && npm install",
+    "start": "cd School_Management_API && npm start"
+  },
+  "keywords": ["node", "express", "mysql"],
+  "author": "Amogh",
+  "license": "ISC"
+}
