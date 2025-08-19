@@ -1,6 +1,7 @@
 import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 dotenv.config();
+import logger from './logger.js';
 
 
 const  db = await  mysql.createPool({
@@ -10,7 +11,7 @@ const  db = await  mysql.createPool({
     database: process.env.MYSQL_DB
 });
 
-console.log("Connected to MySQL DB");
+logger.info("Connected to MySQL DB");
 
 export default db;
 

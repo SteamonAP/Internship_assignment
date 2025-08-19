@@ -1,4 +1,5 @@
 import db from '../config/db.js';
+import logger from '../config/logger.js';
 
 const createSchoolsTable = async () =>{
     const sql = `CREATE TABLE IF NOT EXISTS schools (
@@ -11,7 +12,7 @@ const createSchoolsTable = async () =>{
     `;
     try {
         await db.execute(sql);
-        console.log("School table was created successfully");
+        logger.info("School table was created successfully");
     } catch (error) {
         console.error("Error creating school table: ", error);
         
