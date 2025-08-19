@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import db from './src/config/db.js';
 import logger from './src/config/logger.js';
 import schoolRoute from './src/routes/schoolRoute.js'
+import errorHandler from './src/middleware/errorHandler.js'
 
 dotenv.config();
 
@@ -40,6 +41,7 @@ app.use('/api',schoolRoute);
 //     console.log('Hello from Amogh');
 // });
 
+app.use(errorHandler);  
 
 
 app.listen(PORT, () => {
