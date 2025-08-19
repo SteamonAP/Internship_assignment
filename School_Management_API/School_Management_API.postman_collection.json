@@ -69,7 +69,7 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "http://localhost:3000",
+			"value": "https://internship-assignment-w0wi.onrender.com",
 			"type": "string"
 		}
 	]

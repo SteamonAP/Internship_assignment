@@ -77,7 +77,11 @@ CREATE TABLE schools (
 
 ### Base URL
 ```
+# Local Development
 http://localhost:3000/api
+
+# Live API (Deployed on Render)
+https://internship-assignment-w0wi.onrender.com/api
 ```
 
 ### 1. Add School
